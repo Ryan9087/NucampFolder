@@ -31,6 +31,8 @@
             </div>
             </div>
         </div>
+</header>
+
         <div id="reserveModal100" class="modal fade" role="dialog">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -42,10 +44,10 @@
                         <div class="container-fluid">
                                 <form>
                                         <div class="form-group row">
-                                          <label for="inputEmail3" class="col-sm-4 col-form-label labelText">Number of Campers</label>
-                                          <div class="col-sm-8">
+                                          <label for="numCampers" class="col-sm-6 col-form-label labelText">Number of Campers</label>
+                                          <div class="col">
                                                 <div class="form-group">
-                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                        <select class="form-control" id="numCampers">
                                                           <option>1</option>
                                                           <option>2</option>
                                                           <option>3</option>
@@ -57,14 +59,14 @@
                                           </div>
                                         </div>
                                         <div class="form-group row">
-                                          <label for="inputPassword3" class="col-sm-4 col-form-label labelText">Date</label>
-                                          <div class="col-sm-8">
+                                          <label for="inputPassword3" class="col-sm-6 col-form-label labelText">Date</label>
+                                          <div class="col">
                                             <input type="date" class="form-control" id="inputPassword3">
                                           </div>
                                         </div>
                                         <div class="form-group row">
-                                                <label for="option1 option2 option3" class="col-sm-4 col-form-label labelText">Campsite Type</label>
-                                                <div class="btn-group btn-group-toggle col-sm-8" data-toggle="buttons">
+                                                <label for="option1 option2 option3" class="col-sm-6 col-form-label labelText">Campsite Type</label>
+                                                <div class="btn-group btn-group-toggle col" data-toggle="buttons">
                                                         <label class="btn btn-secondary active btn-success">
                                                           <input type="radio" name="options" id="option1" checked>Tent
                                                         </label>
@@ -87,8 +89,6 @@
                 </div>
             </div>
         </div>
-
-    </header>
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top navBackground">
         <div class="container">
@@ -256,44 +256,7 @@
                     </div>
             </div>
         </div>
-        <div class="row row-content">
-                <div class="col-sm-6 mx-auto">
-                     <div class="card">
-                         <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                         <div class="card-body">
-                         <form id="reserveForm">
-                             <div class="form-group row">
-                             <label for="numCampers" class="col-12 col-sm-6" placeholder="select">Number of Campers</label>
-                            <!-- Select Dropdown -->
-                             <div class="col">
-                                    <select name="numCampers" id="numCampers" class="form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                    </select>
-                              </div> 
-                            </div> 
-                            <div class="row form-group">
-                                    <label for="date" class="col-sm-6 col-12">Date</label> 
-                                    <div class="col col-sm-6">
-                                      <input class="form-control" type="date" id="date" name="date"></input>
-                                    </div> 
-                                </div>
-                            <div class="row form-group">
-                                    <div class="col">
-                                      <button class="btn btn-primary" type="submit">Search</button>
-                                    </div> 
-                            </div>
-                        </form>
-                         </div>    
-                         </div>
-                 
-                     </div>
-                </div>
-            </div>
+     
     </div>
     <footer class="site-footer">
         <div class="container">
