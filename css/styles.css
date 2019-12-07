@@ -1,3 +1,11 @@
+#reserveModal100 .modal-header {
+  background: #17A2B8;
+  color: white; }
+
+#loginModal .modal-header {
+  background: #901cad;
+  color: white; }
+
 header h2 {
   color: #cec8ff; }
 
@@ -53,3 +61,6 @@ header h2 {
   position: absolute;
   right: 0;
   bottom: 0; }
+
+a#loginButton {
+  cursor: pointer; }

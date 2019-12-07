@@ -5,11 +5,28 @@ $(function() {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
             $("#carouselButton").children("i").addClass("fa-play");
-        } else {
+        } else { 
             $(".carousel").carousel("cycle");
             $("#carouselButton").children("i").removeClass("fa-play");
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
-});
 
+    $("#reserveButton").click(function(){
+       $("#reserveModal").modal('show');
+    });
+
+    $("#loginButton").click(function(){
+        $("#loginModal").modal('show');
+    });
+
+    $("#xCloseReserveModal, #cancelReserveModal").click(function(){
+        $("#reserveModal").modal('hide');
+    });
+
+    $("#xCloseLogIn, #cancelLogInModal").click(function(){
+        $("#loginModal").modal('hide');
+    });
+
+
+});
